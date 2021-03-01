@@ -1,0 +1,60 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+/* For sticky footer - used flexbox from https://css-tricks.com/couple-takes-sticky-footer/ */
+html, body {
+    height: 100%;
+}
+
+body {
+    /* Background image CSS from https://web.dev/optimize-css-background-images-with-media-queries/*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* css so footer is at bottom of viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+main {
+    /* css so footer is at bottom of viewport */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    /* css so footer is at bottom of viewport */
+    flex-shrink: 0;
+    font-size: .5rem;
+}
+
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+
+/* Remove bullet points from answers list */
+ul.nobullets {
+list-style-type: none;
+}
+
+/* Answer button styling */
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    background-color:#28a745;
+}
+
